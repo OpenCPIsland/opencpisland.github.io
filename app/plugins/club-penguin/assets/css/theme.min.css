@@ -1,0 +1,177 @@
+.cp-screen-account h2,
+.cp-screen-account h3,
+.sf-screen-displayname h2,
+.sf-screen-displayname h3 {
+    font-family: loyola, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-transform: capitalize
+}
+
+.cp-screen-account h2,
+.sf-screen-displayname h2 {
+    font-size: 30px;
+    line-height: 30px
+}
+
+.cp-screen-account h2 .penguin-name,
+.sf-screen-displayname h2 .penguin-name {
+    text-transform: none
+}
+
+.cp-screen-account h3,
+.sf-screen-displayname h3 {
+    font-size: 24px;
+    line-height: 24px
+}
+
+.cp-screen-account button.sf-dialog-btn.displayname-cp,
+.sf-screen-displayname button.sf-dialog-btn.displayname-cp {
+    text-transform: none
+}
+
+.cp-screen-account form {
+    padding: 0 20px
+}
+
+.cp-screen-account .step,
+.cp-screen-account .step-header {
+    margin-bottom: 30px
+}
+
+.cp-screen-account .step-1 h2 {
+    margin-top: 0;
+    padding-top: 10px
+}
+
+.cp-screen-account .step-1 .button-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+    margin: 10px 15px
+}
+
+.cp-screen-account button.sf-dialog-btn.no,
+.cp-screen-account button.sf-dialog-btn.yes {
+    width: 85px;
+    height: 78px;
+    line-height: 75px;
+    background: none
+}
+
+.cp-screen-account button.sf-dialog-btn.no:focus,
+.cp-screen-account button.sf-dialog-btn.no:hover,
+.cp-screen-account button.sf-dialog-btn.no:hover:focus,
+.cp-screen-account button.sf-dialog-btn.yes:focus,
+.cp-screen-account button.sf-dialog-btn.yes:hover,
+.cp-screen-account button.sf-dialog-btn.yes:hover:focus {
+    background: none
+}
+
+.cp-screen-account button.sf-dialog-btn.no:before,
+.cp-screen-account button.sf-dialog-btn.yes:before {
+    font-family: theme_icons, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    border-radius: 40%
+}
+
+.cp-screen-account button.sf-dialog-btn.no span,
+.cp-screen-account button.sf-dialog-btn.yes span {
+    display: none
+}
+
+.cp-screen-account button.sf-dialog-btn.yes:before {
+    content: '\e026';
+    color: #f56300
+}
+
+.cp-screen-account button.sf-dialog-btn.no:before {
+    content: '\e023';
+    color: #004ba0
+}
+
+.cp-screen-account .forgot {
+    font-family: proxima_nova_bold, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    display: block;
+    padding: 8px 0 0;
+    text-align: center
+}
+
+.cp-screen-account .forgot a {
+    color: #22a4f3
+}
+
+.cp-screen-account .forgot a:hover {
+    color: #004ba0;
+    text-decoration: underline
+}
+
+.cp-screen-end h2 {
+    font-family: loyola, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 32px
+}
+
+.cp-screen-end h2:first-of-type {
+    margin: 0;
+    font-size: 36px
+}
+
+.cp-screen-end p {
+    font-size: 24px;
+    margin-top: 0
+}
+
+.cp-screen-end .rewards-img {
+    visibility: hidden;
+    height: 200px
+}
+
+.cp-screen-end .intro,
+.cp-screen-end .outtro {
+    font-family: proxima_nova_semibold, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0
+}
+
+.avatar-block.large .avatar-name {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    text-align: left;
+    padding-left: 3px;
+    box-sizing: border-box;
+    transform: rotate(-2.3deg)
+}
+
+.avatar-block.large .avatar-img-wrap.member .member-badge,
+.avatar-block.membership-icon .avatar-img-wrap .member-badge {
+    max-width: 120px !important;
+    right: -30px !important;
+    left: auto !important
+}
+
+/*
+     FILE ARCHIVED ON 14:17:38 Feb 03, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:15:30 Sep 01, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.762
+  exclusion.robots: 0.032
+  exclusion.robots.policy: 0.019
+  esindex: 0.013
+  cdx.remote: 61.015
+  LoadShardBlock: 45.214 (3)
+  PetaboxLoader3.datanode: 120.396 (5)
+  load_resource: 310.024 (2)
+  PetaboxLoader3.resolve: 190.657 (2)
+*/
