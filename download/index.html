@@ -13,16 +13,16 @@
     <link rel="canonical" href="https://web.archive.org/web/20180203212830/https://www.clubpenguinisland.com/download/">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Download and join Club Penguin Island for PC, Mac, Mobile">
+    <meta property="og:title" content="Download and join Club Penguin Island for PC, Mobile and Web">
     <meta property="og:description"
-        content="Find the latest version of Disney's online virtual world. Play together with friends from any device. New features and items are added every release!">
+        content="Find the latest version of Club Penguin Island. Play together with friends from any device. New features and items are added every release!">
     <meta property="og:url"
         content="https://web.archive.org/web/20180203212830/https://www.clubpenguinisland.com/download/">
     <meta property="og:site_name" content="Club Penguin Island">
     <meta property="article:publisher" content="https://www.facebook.com/clubpenguin/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description"
-        content="Find the latest version of Disney's online virtual world. Play together with friends from any device. New features and items are added every release!">
+        content="Find the latest version of Club Penguin Island. Play together with friends from any device. New features and items are added every release!">
     <meta name="twitter:title" content="Download and join Club Penguin Island for PC, Mac, Mobile">
     <meta name="twitter:site" content="@clubpenguin">
     <meta name="twitter:creator" content="@clubpenguin">
@@ -105,8 +105,6 @@
         </ul>
     </div>
     <div class="sf-page slidemenu-push">
-        <script type="text/javascript" id="disneyid-script"
-            src="https://web.archive.org/web/20180203212830js_/https://cdn.registerdisney.go.com/v2/outer/DisneyID.js"></script>
         <style type="text/css">
             #sf-content,
             .sf-chromeless .sf-page,
@@ -122,12 +120,12 @@
                 <ul id="menu-mobile-nav" class="nav">
                     <li id="menu-item-5981"
                         class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1347 current_page_item menu-item-5981 bi-dest-dl">
-                        <a href="https://web.archive.org/web/20180203212830/https://www.clubpenguinisland.com/download/"
+                        <a href="/download/"
                             aria-selected="true" class="has-bi">Download</a></li>
                     <li id="menu-item-689"
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-689 bi-dest-help"><a
-                            href="https://web.archive.org/web/20180203212830/https://help.disney.com/en_US/clubpenguinisland"
-                            class="has-bi">Help</a></li>
+                            href="https://discord.gg/2V6tYJPbpc"
+                            class="has-bi">Discord</a></li>
                 </ul> <a href="#" id="nav-mobile-close" class="close-link has-bi" data-bi_dest="nav-close"
                     aria-label="Mobile Navigation Close" style="top: 0px;"><span
                         class="i icon-close anim-spin-rtl"></span></a>
@@ -238,7 +236,7 @@
             <div class="sf-container sf-row sf-grid-wrapper sf-wide-wrapper" role="document">
                 <main class="main " role="main">
                     <div class="sf-grid packery" style="position: relative;height: 415px;">
-                        <div class="sf-cell sf-g-span-1" style="position: absolute; left: 0px; top: 0px;">
+                        <div class="sf-cell sf-g-span-1 " style="position: absolute; left: 0px; top: 0px;">
                             <article id="content-1-1-1" class="sf-widget bi-parent widget-content cw-50 content-center calign-left cvalign-middle pat-c sfProcessed has-border-radius" data-biid="content-1-1-1" style="" role="article">
                                 <div class="widget__content" style="color:#002872;background-color:#b8f361;">
                                     <div class="widget__content__inner" tabindex="0"><span class="inner">
@@ -546,6 +544,10 @@
           // Mobile device style: fill the whole browser client area with the game canvas:
   
           var meta = document.createElement('meta');
+var buttons = document.getElementsByClassName('webcontrols');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].disabled = true;
+}
           meta.name = 'viewport';
           meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
           document.getElementsByTagName('head')[0].appendChild(meta);
