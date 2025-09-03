@@ -5245,8 +5245,7 @@ p.submit {
     height: 75px;
     background: url(../img/disneylogo.png) no-repeat center;
     background-size: contain;
-    bottom: 200px;
-    position: absolute;
+
 }
 #unity-loading-bar {
     position: absolute;
@@ -5261,8 +5260,6 @@ p.submit {
     margin-top: 10px;
     margin-left: 6.5px;
     background: url('../img/progress-bar-empty-dark.png') no-repeat center;
-    bottom: 175px;
-    position: relative;
 }
 
 #unity-progress-bar-full {
@@ -5456,6 +5453,7 @@ body#tinymce {
     font-weight: 400;
     margin: 12px !important
 }
+
 
 
 
