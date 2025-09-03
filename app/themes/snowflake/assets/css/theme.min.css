@@ -5271,6 +5271,9 @@ p.submit {
     margin-top: 10px;
     background: url('../img/progress-bar-full-dark.png') no-repeat center;
 }
+.unity-mobile {
+    display: none;
+}
 
     #sf-footer .sf-container {
         padding: 40px 0 0
@@ -5453,4 +5456,5 @@ body#tinymce {
     font-weight: 400;
     margin: 12px !important
 }
+
 
