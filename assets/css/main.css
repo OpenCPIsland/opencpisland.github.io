@@ -203,7 +203,7 @@ grid .text.center {
     cursor: pointer;
     transition: 0.2s;
 }
-.dlbtnforpc:hover, .dlbtnforand:hover {
+.dlbtnforwin:hover, .dlbtnforand:hover {
     background-color: #004bb5 !important;
     color: #ebebeb !important;
 }
@@ -227,4 +227,5 @@ grid .text.center {
     color: gray;
     font-family: 'Metropolis';
     font-size: 12px;
+
 }
