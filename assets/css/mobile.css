@@ -1,0 +1,79 @@
+@media screen and (max-width: 900px) {
+    
+    /* Header: Stack logo and links */
+    header {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .headlogo {
+        margin: 0 auto 15px auto; /* Centers logo */
+        display: block;
+        height: 60px;
+    }
+
+    .headlink {
+        display: inline-block;
+        margin: 5px 10px;
+        font-size: 18px;
+    }
+
+    /* Banner: Ensure image covers correctly and button fits */
+    banner img {
+        height: 50vh; /* Don't take full height on mobile */
+        object-fit: cover; /* Crop sides instead of squishing */
+        width: 100%;
+    }
+
+    banner center {
+        bottom: 95px; /* Move button closer to bottom */
+    }
+
+    banner img.download {
+        height: 50vh;
+        width: 100%;
+        object-position: left;
+        object-fit: cover;
+    }
+
+    /* Grid: Force single column layout */
+    grid {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        /* Override download.css specificities */
+        grid-template-columns: 1fr !important; 
+    }
+
+    grid > div {
+        width: 100%;
+        margin-bottom: 20px;
+        min-height: 300px; /* Good height for scrolling */
+    }
+
+    /* Footer: Center align content */
+    #h1footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #h1footer img {
+        margin-bottom: 15px;
+    }
+
+    .footerlinks {
+        float: none; /* Remove float */
+        top: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Text Adjustments for smaller cards */
+    .jointheislandtxt, .pcmactxt {
+        width: 90% !important;
+        font-size: 14px;
+    }
+}
