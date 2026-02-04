@@ -6,6 +6,18 @@ grid {
     background: #1a1c2c; /* Dark background matching the image */
     height: 41.5%;
 }
+
+grid > div {
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+grid > div:hover {
+    transform: translateY(-2px);
+    transition: 0.18s ease;
+}
+
 .pcmactxt {
     bottom: 20px;
     top: unset !important;
@@ -17,9 +29,15 @@ grid {
     position: absolute !important;
     width: 80%;
     margin: 0 auto;
-    padding: 5px;
-    border-radius: 8px;
+    padding: 8px 10px;
+    border-radius: 12px;
+    background: rgba(26, 28, 44, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
+
 .dltext {
     bottom: 20px;
     top: unset !important;
@@ -29,10 +47,13 @@ grid {
     font-size: larger;
     font-weight: bold;
     position: absolute !important;
-    backdrop-filter: blur(8px);
     width: 26%;
     margin: 0 auto;
-    padding: 5px;
-    border-radius: 8px;
-    background: #ffffff36;
+    padding: 8px 10px;
+    border-radius: 12px;
+    background: rgba(26, 28, 44, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
