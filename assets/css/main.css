@@ -581,6 +581,10 @@ button:focus-visible, .dlbtnforwin:focus-visible, .dlbtnforand:focus-visible {
     --g: 0;
 }
 
+#disneyLogo {
+	height: 44px;
+}
+
 #h1footer::after {
     content: "";
     position: absolute;
@@ -595,9 +599,15 @@ button:focus-visible, .dlbtnforwin:focus-visible, .dlbtnforand:focus-visible {
 }
 
 #h1footer img {
-    height: 44px;
+    height: 40px;
     position: relative;
     z-index: 1;
+}
+
+.footerDiscordLogo > img {
+	width: 40px !important;
+	height: 40px !important;
+	margin: 0 20px 0 0 !important;
 }
 
 .footerlinks {
