@@ -1,20 +1,19 @@
 (function () {
     var root = document.documentElement;
+    var btn = document.querySelector(".themeToggle");
     var logo = document.getElementById("disneyLogo");
 
-    function applyLogo() {
-        if (!logo) return;
-        if (root.getAttribute("data-theme") === "light") {
-            logo.src = "assets/img/logo-disney-black.png";
-        } else {
-            logo.src = "assets/img/logo-disney-grey.png";
-        }
+    function applyUI() {
+        if (btn) btn.textContent = (root.getAttribute("data-theme") === "light") ? "Dark" : "Light";
+        if (logo) logo.src = (root.getAttribute("data-theme") === "light")
+            ? "assets/img/logo-disney-black.png"
+            : "assets/img/logo-disney-grey.png";
     }
 
     function setTheme(theme) {
         root.setAttribute("data-theme", theme);
         try { localStorage.setItem("theme", theme); } catch (e) {}
-        applyLogo();
+        applyUI();
     }
 
     function init() {
@@ -23,11 +22,9 @@
         if (saved !== "light" && saved !== "dark") saved = "dark";
         setTheme(saved);
 
-        var btn = document.querySelector(".themeToggle");
         if (!btn) return;
-
         btn.addEventListener("click", function () {
-            var cur = root.getAttribute("data-theme") === "light" ? "light" : "dark";
+            var cur = (root.getAttribute("data-theme") === "light") ? "light" : "dark";
             setTheme(cur === "light" ? "dark" : "light");
         });
     }
