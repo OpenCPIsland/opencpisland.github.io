@@ -18,6 +18,10 @@
         font-size: 18px;
     }
 
+    .themeToggle {
+            margin-top: -5px !important;
+    }
+
     /* Banner: Ensure image covers correctly and button fits */
     banner img {
         height: 50vh; /* Don't take full height on mobile */
@@ -76,4 +80,5 @@
         width: 90% !important;
         font-size: 14px;
     }
+
 }
