@@ -56,6 +56,10 @@
         min-height: 300px; /* Good height for scrolling */
     }
 
+    .cpitextvideointro {
+            left: -22px !important;
+    }
+
     /* Footer: Center align content */
     #h1footer {
         display: flex;
@@ -82,3 +86,4 @@
     }
 
 }
+
