@@ -38,6 +38,12 @@ grid > div:hover {
     border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
+html[data-theme="light"] .pcmactxt {
+    background: rgba(255, 255, 255, 0.66);
+    color: rgba(26, 28, 44, 0.86);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
 .dltext {
     bottom: 20px;
     top: unset !important;
