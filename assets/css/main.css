@@ -159,6 +159,9 @@ banner center {
     bottom: 100px;
     position: relative;
 }
+.gamecenter {
+    bottom: 0px !important;
+}
 
 banner button {
     position: absolute;
