@@ -2,12 +2,16 @@
     var root = document.documentElement;
     var btn = document.querySelector(".themeToggle");
     var logo = document.getElementById("disneyLogo");
+    var discord = document.querySelector(".footerDiscordLogo img");
 
     function applyUI() {
         if (btn) btn.textContent = (root.getAttribute("data-theme") === "light") ? "Dark" : "Light";
         if (logo) logo.src = (root.getAttribute("data-theme") === "light")
             ? "assets/img/logo-disney-black.png"
             : "assets/img/logo-disney-grey.png";
+        if (discord) discord.src = (root.getAttribute("data-theme") === "light")
+            ? "assets/img/Discord-dark.png"
+            : "assets/img/Discord.png";
     }
 
     function setTheme(theme) {
