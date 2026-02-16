@@ -85,19 +85,20 @@ function unityShowBanner(msg, type) {
 }
 
 var buildUrl = "game/Build";
-var loaderUrl = buildUrl + "/publicrel1.loader.js";
-
+var gameVersion = "0.1.0"; // Caches the game, change on update
+var loaderUrl = `${buildUrl}/publicrel1.loader.js?v=${gameVersion}`;
+	
 // Generate paths for parts 01 to 31
 const dataParts = Array.from({ length: 31 }, (_, i) => {
     const id = (i + 1).toString().padStart(2, '0');
-    return `${buildUrl}/publicrel1.data.unityweb.part${id}`;
+    return `${buildUrl}/publicrel1.data.unityweb.part${id}?v=${gameVersion}`;
 });
 
 var config = {
     arguments: [],
     dataUrl: "", // Populated at boot
-    frameworkUrl: buildUrl + "/publicrel1.framework.js",
-    codeUrl: buildUrl + "/publicrel1.wasm",
+    frameworkUrl: `${buildUrl}/publicrel1.framework.js?v=${gameVersion}`,
+    codeUrl: `${buildUrl}/publicrel1.wasm?v=${gameVersion}`,
     streamingAssetsUrl: "game/StreamingAssets",
     companyName: "OpenCPI",
     productName: "CP Island",
