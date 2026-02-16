@@ -85,24 +85,25 @@ function unityShowBanner(msg, type) {
 }
 
 var buildUrl = "game/Build";
-var loaderUrl = buildUrl + "/publicbeta1.loader.js";
+var loaderUrl = buildUrl + "/publicrel1.loader.js";
 
 // Generate paths for parts 01 to 31
 const dataParts = Array.from({ length: 31 }, (_, i) => {
     const id = (i + 1).toString().padStart(2, '0');
-    return `${buildUrl}/publicbeta1.data.unityweb.part${id}`;
+    return `${buildUrl}/publicrel1.data.unityweb.part${id}`;
 });
 
 var config = {
     arguments: [],
     dataUrl: "", // Populated at boot
-    frameworkUrl: buildUrl + "/publicbeta1.framework.js",
-    codeUrl: buildUrl + "/publicbeta1.wasm",
+    frameworkUrl: buildUrl + "/publicrel1.framework.js",
+    codeUrl: buildUrl + "/publicrel1.wasm",
     streamingAssetsUrl: "game/StreamingAssets",
     companyName: "OpenCPI",
     productName: "CP Island",
     productVersion: "1.13.2",
     showBanner: unityShowBanner,
+    matchWebGLToCanvasSize: true,
 };
 
 if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
