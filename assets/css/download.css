@@ -63,3 +63,8 @@ html[data-theme="light"] .pcmactxt {
     color: rgba(255, 255, 255, 0.92);
     border: 1px solid rgba(255, 255, 255, 0.14);
 }
+.downloadbtns {
+        height: 82%;
+    overflow-y: auto;
+}
+
