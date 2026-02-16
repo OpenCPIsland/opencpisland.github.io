@@ -66,5 +66,8 @@ html[data-theme="light"] .pcmactxt {
 .downloadbtns {
         height: 82%;
     overflow-y: auto;
+    bottom: 15px;
+    position: relative;
 }
+
 
