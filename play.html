@@ -37,7 +37,7 @@
             <div id="unity-warning"> </div>
             <div id="unity-footer">
               <div id="unity-fullscreen-button"></div>
-              <button id="unity-boot-button" onclick="DontbootGame();">Start</button>
+              <button id="unity-boot-button" onclick="bootGame();">Start</button>
               <div id="unity-build-title"></div>
             </div>
           </div>
@@ -85,7 +85,7 @@ function unityShowBanner(msg, type) {
 }
 
 var buildUrl = "game/Build";
-var gameVersion = "0.1.0"; // Caches the game, change on update
+var gameVersion = "0.1.1"; // Caches the game, change on update
 var loaderUrl = `${buildUrl}/publicrel1.loader.js?v=${gameVersion}`;
 	
 // Generate paths for parts 01 to 31
