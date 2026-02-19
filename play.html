@@ -173,7 +173,7 @@
         return URL.createObjectURL(new Blob([merged], { type: 'application/octet-stream' }));
     }
 
-    async function bootGame() {
+    async function doNotbootGame() {
         document.getElementById("unity-boot-button").style.display = "none";
         document.querySelector("#unity-loading-bar").style.display = "block";
 
