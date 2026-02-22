@@ -64,6 +64,8 @@
     </footer>
 
 <script>
+    window.alert = function() {};
+    
     var canvas = document.querySelector("#unity-canvas");
 
     function unityShowBanner(msg, type) {
@@ -195,10 +197,10 @@
                     unityInstance.SetFullscreen(1);
                 };
             }).catch((message) => {
-                alert("Unity Init Error: " + message);
+                unityShowBanner(`Unity Init Error: ${message}`, Error);
             });
         } catch (err) {
-            alert("Data Download Error: " + err.message);
+            unityShowBanner(`Data Download Error: ${err.message}`, Error);
         }
     }
 </script>
