@@ -46,9 +46,8 @@
 }
 #unity-canvas {
     outline: none;
-    width: 60% !important;  
+    width: 54% !important;  
     height: auto !important;  
-    aspect-ratio: 16/9;     
     max-height: 90vh;      
 }
 #unity-boot-button {
