@@ -88,19 +88,19 @@
     }
 
     var buildUrl = "game/Build";
-    var gameVersion = "0.2.1"; 
-    var loaderUrl = `${buildUrl}/publicrel2.loader.js?v=${gameVersion}`;
+    var gameVersion = "0.3.0"; 
+    var loaderUrl = `${buildUrl}/publicrel3.loader.js?v=${gameVersion}`;
         
-    const dataParts = Array.from({ length: 31 }, (_, i) => {
+    const dataParts = Array.from({ length: 32 }, (_, i) => {
         const id = (i + 1).toString().padStart(2, '0');
-        return `${buildUrl}/publicrel2.data.unityweb.part${id}?v=${gameVersion}`;
+        return `${buildUrl}/publicrel3.data.unityweb.part${id}?v=${gameVersion}`;
     });
 
     var config = {
         arguments: [],
         dataUrl: "", 
-        frameworkUrl: `${buildUrl}/publicrel2.framework.js?v=${gameVersion}`,
-        codeUrl: `${buildUrl}/publicrel2.wasm?v=${gameVersion}`,
+        frameworkUrl: `${buildUrl}/publicrel3.framework.js?v=${gameVersion}`,
+        codeUrl: `${buildUrl}/publicrel3.wasm?v=${gameVersion}`,
         streamingAssetsUrl: "game/StreamingAssets",
         companyName: "OpenCPI",
         productName: "CP Island",
@@ -127,7 +127,7 @@
 
     /*Downloads split data files in parallel.*/
     async function loadSplitData(parts, onProgress) {
-        const concurrencyLimit = 3; // Number of simultaneous downloads
+        const concurrencyLimit = 2; // Number of simultaneous downloads
         const chunks = new Array(parts.length);
         let loadedCount = 0;
         let currentIndex = 0;
