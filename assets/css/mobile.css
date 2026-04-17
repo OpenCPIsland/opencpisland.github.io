@@ -88,6 +88,10 @@
         width: 90% !important;
         font-size: 15px;
     }
+	
+.dlbtnforwin, .dlbtnforand {
+    width: 90% !important;
+}
 
 }
 
