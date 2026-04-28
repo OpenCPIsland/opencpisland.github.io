@@ -88,19 +88,19 @@
     }
 
     var buildUrl = "game/Build";
-    var gameVersion = "1.2.0"; 
-    var loaderUrl = `${buildUrl}/StableRelease5.loader.js?v=${gameVersion}`;
+    var gameVersion = "1.2.1"; 
+    var loaderUrl = `${buildUrl}/StableRelease6.loader.js?v=${gameVersion}`;
         
     const dataParts = Array.from({ length: 32 }, (_, i) => {
         const id = (i + 1).toString().padStart(2, '0');
-        return `${buildUrl}/StableRelease5.data.unityweb.part${id}?v=${gameVersion}`;
+        return `${buildUrl}/StableRelease6.data.unityweb.part${id}?v=${gameVersion}`;
     });
 
     var config = {
         arguments: [],
         dataUrl: "", 
-        frameworkUrl: `${buildUrl}/StableRelease5.framework.js?v=${gameVersion}`,
-        codeUrl: `${buildUrl}/StableRelease5.wasm?v=${gameVersion}`,
+        frameworkUrl: `${buildUrl}/StableRelease6.framework.js?v=${gameVersion}`,
+        codeUrl: `${buildUrl}/StableRelease6.wasm?v=${gameVersion}`,
         streamingAssetsUrl: "game/StreamingAssets",
         companyName: "OpenCPI",
         productName: "CP Island",
