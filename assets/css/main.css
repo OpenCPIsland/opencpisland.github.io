@@ -373,7 +373,7 @@ grid div.checkeredr {
    ========================================================= */
 
 grid .text {
-    top: 10px;
+    /*top: 10px;*/
     left: 10px;
     position: relative;
     font-family: 'Metropolis';
