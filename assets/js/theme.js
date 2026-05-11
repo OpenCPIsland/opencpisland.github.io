@@ -7,11 +7,11 @@
     function applyUI() {
         if (btn) btn.textContent = (root.getAttribute("data-theme") === "light") ? "Dark" : "Light";
         if (logo) logo.src = (root.getAttribute("data-theme") === "light")
-            ? "assets/img/logo-disney-black.png"
-            : "assets/img/logo-disney-grey.png";
+            ? "/assets/img/logo-disney-black.png"
+            : "/assets/img/logo-disney-grey.png";
         if (discord) discord.src = (root.getAttribute("data-theme") === "light")
-            ? "assets/img/Discord-dark.png"
-            : "assets/img/Discord.png";
+            ? "/assets/img/Discord-dark.png"
+            : "/assets/img/Discord.png";
     }
 
     function setTheme(theme) {

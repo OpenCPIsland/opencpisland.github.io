@@ -514,7 +514,7 @@ grid .text.center {
 						DOWNLOAD BUTTONS
    ========================================================= */
 
-.dlbtnforwin, .dlbtnforand {
+.dlbtnforwin, .dlbtnforand, .morecpgamesbtn {
     color: #ffffff;
     background-color: #005fc9;
     font-size: 22px;
@@ -533,7 +533,17 @@ grid .text.center {
     --my: 50%;
     --g: 0;
 }
-
+.morecpgamesbtn {
+    background-color: #009bc9 !important;
+}
+.morecpgamesbtn:disabled, .morecpgamesbtn:disabled:hover {
+    background-color: #015e7a !important;
+    cursor: not-allowed;
+}
+ .morecpgamesbtn:hover {
+    background-color: #0081a8 !important;
+     color: #ebebeb !important;
+ }
 .dlbtnforwin:hover, .dlbtnforand:hover {
     background-color: #004bb5 !important;
     color: #ebebeb !important;
