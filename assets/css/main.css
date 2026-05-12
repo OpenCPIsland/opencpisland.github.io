@@ -65,6 +65,10 @@ header::after {
     margin-left: 35px;
 }
 
+.headlogo:hover {
+    transform: scale3D(1.03, 1.03, 1);
+}
+
 .headlink {
     color: rgba(255, 255, 255, 0.78);
     text-decoration: none;
@@ -596,6 +600,10 @@ button:focus-visible, .dlbtnforwin:focus-visible, .dlbtnforand:focus-visible {
 
 #disneyLogo {
 	height: 44px;
+}
+
+#disneyLogo:hover {
+    transform: scale3D(1.03, 1.03, 1);
 }
 
 #h1footer::after {
