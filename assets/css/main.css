@@ -460,7 +460,7 @@ grid .text.center {
     background: rgba(255, 255, 255, 0.22);
     border: 1px solid rgba(255, 255, 255, 0.18);
   /*  backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); */   /* <---- Fixes a weird graphical line bug, anywho commenting this out fixes it. */
+    -webkit-backdrop-filter: blur(10px); */   /* <---- Fixes a weird graphical line bug, anywho commenting this out fixes it. - Malcolm */
     box-shadow: 0 10px 22px rgba(0,0,0,0.22);
     position: relative;
     overflow: hidden;
