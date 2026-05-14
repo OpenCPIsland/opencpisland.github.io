@@ -194,6 +194,10 @@ banner button:hover {
     color: #ebebeb !important;
 }
 
+.mobile-banner{
+    display:none;
+}
+
 /* =========================================================
 					BANNER STRIPS & GLARE
    ========================================================= */
