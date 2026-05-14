@@ -631,6 +631,11 @@ button:focus-visible, .dlbtnforwin:focus-visible, .dlbtnforand:focus-visible {
 	width: 50px !important;
 	height: 50px !important;
 	margin: 0 20px 0 0 !important;
+	transition: 0.2s;
+}
+
+.footerDiscordLogo:hover img {
+    transform: scale3D(1.03, 1.03, 1);
 }
 
 .footerlinks {
