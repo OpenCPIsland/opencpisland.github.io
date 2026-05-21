@@ -46,7 +46,7 @@
 }
 #unity-canvas {
     outline: none;
-    width: 54% !important;  
+    width: 54%;  
     height: auto !important;  
     max-height: 90vh;      
 }
@@ -58,4 +58,7 @@
     padding: 6px;
     line-height: 18px !important;
     transform: translateX(0%);
+}
+.sledracercanvas {
+width: 44% !important
 }
