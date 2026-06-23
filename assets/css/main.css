@@ -419,8 +419,8 @@ grid .text.center {
     font-size: larger;
     font-weight: bold;
     position: absolute !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+   /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */   /* <---- Fixes a weird graphical line bug, anywho commenting this out fixes it. - Malcolm */
     width: 46%;
     margin: 0 auto;
     padding: 8px 10px;
