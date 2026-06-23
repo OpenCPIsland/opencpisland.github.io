@@ -555,6 +555,10 @@ grid .text.center {
     --my: 50%;
     --g: 0;
 }
+.dlbtnforwin:disabled, .dlbtnforand:disabled, .dlbtnforwin:disabled:hover, .dlbtnforand:disabled:hover {
+    background-color: #013269 !important;
+    cursor: not-allowed;
+}
 .morecpgamesbtn {
     background-color: #009bc9 !important;
 }
