@@ -91,7 +91,7 @@
     var gameVersion = "2.8.0"; 
     var loaderUrl = `${buildUrl}/StableRelease28.loader.js?v=${gameVersion}`;
         
-    const dataParts = Array.from({ length: 32 }, (_, i) => {
+    const dataParts = Array.from({ length: 36 }, (_, i) => {
         const id = (i + 1).toString().padStart(2, '0');
         return `${buildUrl}/StableRelease28.data.unityweb.part${id}?v=${gameVersion}`;
     });
