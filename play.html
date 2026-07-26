@@ -87,21 +87,22 @@
         updateBannerVisibility();
     }
 
-    var buildUrl = "games/webgl/Build";
-    var gameVersion = "3.1.0"; 
-    var loaderUrl = `${buildUrl}/StableRelease31.loader.js?v=${gameVersion}`;
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	var buildUrl = isMobile ? "games/webgl/BuildMobile" : "games/webgl/BuildDesktop";
+    var gameVersion = "3.2.0"; 
+    var loaderUrl = `${buildUrl}/StableRelease32.loader.js?v=${gameVersion}`;
         
     const dataParts = Array.from({ length: 36 }, (_, i) => {
         const id = (i + 1).toString().padStart(2, '0');
-        return `${buildUrl}/StableRelease31.data.unityweb.part${id}?v=${gameVersion}`;
+        return `${buildUrl}/StableRelease32.data.unityweb.part${id}?v=${gameVersion}`;
     });
 
     var config = {
         arguments: [],
         dataUrl: "", 
-        frameworkUrl: `${buildUrl}/StableRelease31.framework.js?v=${gameVersion}`,
-        codeUrl: `${buildUrl}/StableRelease31.wasm?v=${gameVersion}`,
-        streamingAssetsUrl: "games/webgl/StreamingAssets",
+        frameworkUrl: `${buildUrl}/StableRelease32.framework.js?v=${gameVersion}`,
+        codeUrl: `${buildUrl}/StableRelease32.wasm?v=${gameVersion}`,
+        streamingAssetsUrl: `${buildUrl}/StreamingAssets`,
         companyName: "OpenCPI",
         productName: "CP Island",
         productVersion: "1.13.5",
@@ -109,7 +110,7 @@
         matchWebGLToCanvasSize: true,
     };
 
-    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    if (isMobile) {
         var meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
