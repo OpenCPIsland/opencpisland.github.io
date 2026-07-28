@@ -89,21 +89,21 @@
 
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	var buildUrl = isMobile ? "games/webgl/BuildMobile" : "games/webgl/BuildDesktop";
-    var gameVersion = "3.2.0"; 
-    var loaderUrl = `${buildUrl}/StableRelease32.loader.js?v=${gameVersion}`;
+    var gameVersion = "3.3.0"; 
+    var loaderUrl = `${buildUrl}/StableRelease33.loader.js?v=${gameVersion}`;
 	
 	const dataPartCount = isMobile ? 34 : 36;
         
     const dataParts = Array.from({ length: dataPartCount }, (_, i) => {
         const id = (i + 1).toString().padStart(2, '0');
-        return `${buildUrl}/StableRelease32.data.unityweb.part${id}?v=${gameVersion}`;
+        return `${buildUrl}/StableRelease33.data.unityweb.part${id}?v=${gameVersion}`;
     });
 
     var config = {
         arguments: [],
         dataUrl: "", 
-        frameworkUrl: `${buildUrl}/StableRelease32.framework.js?v=${gameVersion}`,
-        codeUrl: `${buildUrl}/StableRelease32.wasm?v=${gameVersion}`,
+        frameworkUrl: `${buildUrl}/StableRelease33.framework.js?v=${gameVersion}`,
+        codeUrl: `${buildUrl}/StableRelease33.wasm?v=${gameVersion}`,
         streamingAssetsUrl: `${buildUrl}/StreamingAssets`,
         companyName: "OpenCPI",
         productName: "CP Island",
