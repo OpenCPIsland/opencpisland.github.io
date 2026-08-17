@@ -605,6 +605,18 @@ button:focus-visible, .dlbtnforwin:focus-visible, .dlbtnforand:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px rgba(255,255,255,0.18);
 }
+/* =========================================================
+                          PUFFLE LAUNCH
+   ========================================================= */
+
+.plbanner {
+    background-image: url(../img/plBG.png);
+}
+.plbanner center {
+    bottom: 0px !important;
+    position: relative;
+    padding: 8vh;
+}
 
 /* =========================================================
 					FOOTER (GLASS + GLARE)
