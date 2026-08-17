@@ -69,6 +69,13 @@ html[data-theme="light"] .pcmactxt {
     bottom: 15px;
     position: relative;
 }
-
+.plbanner {
+    background-image: url(../img/plBG.png);
+}
+.plbanner center {
+    bottom: 0px !important;
+    position: relative;
+    padding: 8vh;
+}
 
 
