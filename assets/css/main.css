@@ -285,7 +285,7 @@ grid::before {
     pointer-events: none;
     z-index: 0;
     background:
-        radial-gradient(200px 200px at 50% 0%, rgba(255,255,255,0.06), rgba(255,255,255,0.00) 62%),
+        radial-gradient(100px 100px at 50% 0%, rgba(255,255,255,0.06), rgba(255,255,255,0.00) 62%),
         radial-gradient(0px 0px at 100% 100%, rgba(255,255,255,0.03), rgba(255,255,255,0.00) 60%);
 }
 
@@ -298,7 +298,7 @@ grid::after {
     transition: opacity 0.12s ease;
     z-index: 0;
     background:
-        radial-gradient(200px 200px at var(--mx) var(--my), rgba(255,255,255,0.18), rgba(255,255,255,0.00) 62%),
+        radial-gradient(100px 100px at var(--mx) var(--my), rgba(255,255,255,0.18), rgba(255,255,255,0.00) 62%),
         radial-gradient(0px 0px at calc(var(--mx) + 12%) calc(var(--my) + 10%), rgba(255,255,255,0.07), rgba(255,255,255,0.00) 74%);
     mix-blend-mode: screen;
 }
@@ -339,7 +339,7 @@ grid > div::after {
     opacity: var(--g);
     transition: opacity 0.12s ease;
     background:
-        radial-gradient(200px 200px at var(--mx) var(--my), rgba(255,255,255,0.55), rgba(255,255,255,0.00) 60%),
+        radial-gradient(100px 100px at var(--mx) var(--my), rgba(255,255,255,0.55), rgba(255,255,255,0.00) 60%),
         radial-gradient(0px 0px at calc(var(--mx) + 10%) calc(var(--my) + 8%), rgba(255,255,255,0.18), rgba(255,255,255,0.00) 70%);
     mix-blend-mode: screen;
 }
@@ -626,7 +626,7 @@ button::after, .dlbtnforwin::after, .dlbtnforand::after, .pcmactxt::after, .join
     transition: opacity 0.12s ease;
     border-radius: inherit;
     background:
-        radial-gradient(200px 200px at var(--mx) var(--my), rgba(255,255,255,0.60), rgba(255,255,255,0.00) 62%),
+        radial-gradient(100px 100px at var(--mx) var(--my), rgba(255,255,255,0.60), rgba(255,255,255,0.00) 62%),
         radial-gradient(0px 0px at calc(var(--mx) + 10%) calc(var(--my) + 8%), rgba(255,255,255,0.18), rgba(255,255,255,0.00) 72%);
     mix-blend-mode: screen;
 }
