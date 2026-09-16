@@ -36,6 +36,7 @@
         add("#h1footer");
         add("#h2footer");
         add(".underbanner");
+		add(".bannerpurple");
         add(".abovefooter");
         add("grid");
         add("grid > div");
