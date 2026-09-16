@@ -218,6 +218,22 @@ banner button:hover {
     --g: 0;
 }
 
+.underbannerpurple, .abovefooterpurple {
+    width: 99.99vw;
+    display: block;
+    text-align: center;
+    background-color: #6d27ac;
+    padding: 10px 0;
+    color: white;
+    font-family: 'Metropolis';
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    --mx: 50%;
+    --my: 50%;
+    --g: 0;
+}
+
 .underbanner::after, .abovefooter::after {
     content: "";
     position: absolute;
