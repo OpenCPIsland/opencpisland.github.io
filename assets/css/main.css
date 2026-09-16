@@ -218,7 +218,20 @@ banner button:hover {
     --g: 0;
 }
 
-.underbannerpurple, .abovefooterpurple {
+.underbanner::after, .abovefooter::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    pointer-events: none;
+    opacity: var(--g);
+    transition: opacity 0.12s ease;
+    background:
+        radial-gradient(100px 100px at var(--mx) var(--my), rgba(255,255,255,0.34), rgba(255,255,255,0.00) 62%),
+        radial-gradient(0px 0px at calc(var(--mx) + 10%) calc(var(--my) + 8%), rgba(255,255,255,0.12), rgba(255,255,255,0.00) 74%);
+    mix-blend-mode: screen;
+}
+
+.bannerpurple {
     width: 99.99vw;
     display: block;
     text-align: center;
@@ -234,7 +247,7 @@ banner button:hover {
     --g: 0;
 }
 
-.underbanner::after, .abovefooter::after {
+.bannerpurple::after {
     content: "";
     position: absolute;
     inset: -2px;
