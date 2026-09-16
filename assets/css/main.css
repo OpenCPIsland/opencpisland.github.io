@@ -590,7 +590,7 @@ grid .text.center {
     cursor: not-allowed;
 }
 .morecpgamesbtn {
-    background-color: #009bc9 !important;
+    background-color: #A855F7 !important;
 }
 .morecpgamesbtn:disabled, .morecpgamesbtn:disabled:hover {
     background-color: #015e7a !important;
