@@ -26,9 +26,61 @@
     <a class="underbanner">Penguins, please remember this is offline mode! There are parties every month that loop every year!</a>
 
     <banner>
-		<img class="download pc-banner" src="assets/img/Halloween.png" alt="Banner Image">
-		<img class="download mobile-banner" src="assets/img/HalloweenMobile.png" alt="Banner Image">
+    <img id="banner" class="download pc-banner" src="assets/img/Halloween.png" alt="Banner Image">
+    <img id="mobile-banner" class="download mobile-banner" src="assets/img/HalloweenMobile.png" alt="Banner Image">
 	</banner>
+
+<script>
+    // Medieval: August 15 - September 5
+    const todayMedieval = new Date();
+
+    const medievalStart = new Date(todayMedieval.getFullYear(), 7, 15);
+    const medievalEnd = new Date(todayMedieval.getFullYear(), 8, 5);
+
+    if (todayMedieval >= medievalStart && todayMedieval <= medievalEnd) {
+        document.getElementById("banner").src = "assets/img/Medieval.jpg";
+        document.getElementById("mobile-banner").src = "assets/img/MedievalMobile.jpg";
+    }
+</script>
+
+<script>
+    // Halloween: October 1 - October 24
+    const todayHalloween = new Date();
+
+    const halloweenStart = new Date(todayHalloween.getFullYear(), 9, 1);
+    const halloweenEnd = new Date(todayHalloween.getFullYear(), 9, 24);
+
+    if (todayHalloween >= halloweenStart && todayHalloween <= halloweenEnd) {
+        document.getElementById("banner").src = "assets/img/Halloween2017Banner.png";
+        document.getElementById("mobile-banner").src = "assets/img/HalloweenMobile.png";
+    }
+</script>
+
+<script>
+    // Anniversary: October 24 - November 7
+    const todayAnniversary = new Date();
+
+    const anniversaryStart = new Date(todayAnniversary.getFullYear(), 9, 24);
+    const anniversaryEnd = new Date(todayAnniversary.getFullYear(), 10, 7);
+
+    if (todayAnniversary >= anniversaryStart && todayAnniversary <= anniversaryEnd) {
+        document.getElementById("banner").src = "assets/img/Anniversary21Banner.png";
+        document.getElementById("mobile-banner").src = "assets/img/AnniversaryBannerMobile.jpg";
+    }
+</script>
+
+<script>
+    // Holiday: December 1 - January 4
+    const todayHoliday = new Date();
+
+    const isDecember = todayHoliday.getMonth() === 11;
+    const isJanuary = todayHoliday.getMonth() === 0 && todayHoliday.getDate() <= 3;
+
+    if (isDecember || isJanuary) {
+        document.getElementById("banner").src = "assets/img/HolidayBanner.jpg";
+        document.getElementById("mobile-banner").src = "assets/img/HolidayBannerMin.png";
+    }
+</script>
 
 <grid>
     <div class="green">
